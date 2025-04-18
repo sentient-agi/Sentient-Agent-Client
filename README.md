@@ -24,7 +24,7 @@
 
 <h1 align="center">Sentient Agent Client</h1>
 
-A simple client and CLI for Agents built with the Sentient Agent Framework. Connects to an agent via SSE and consumes the Sentient Chat events that the agents serves.
+A simple client and CLI for testing agents built with the Sentient Agent Framework. Connects to an agent via SSE and consumes the Sentient Chat events that the agents serves.
 
 ## Installation
 #### 1. Clone the repository:
