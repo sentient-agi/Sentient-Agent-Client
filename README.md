@@ -27,18 +27,18 @@
 A simple client and CLI for testing agents built with the Sentient Agent Framework. Connects to an agent via SSE and consumes the Sentient Chat events that the agents serves.
 
 ## Installation
-#### 1. Clone the repository:
+#### 1. Clone the repository
 ```bash
 git clone https://github.com/sentient-agi/Sentient-Agent-Client.git
 ```
 
-#### 2. Install the dependencies:
+#### 2. Install the dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
 ## Usage
-#### 1. Run the client cli:
+#### 1. Run the client CLI
 ```bash
 python3 -m src.sentient_agent_client
 ```
