@@ -60,6 +60,7 @@ class SentientAgentClient:
             url=url,
             method="POST",
             headers=headers,
-            json=json
+            json=json,
+            timeout=60.0
         ):
             yield await self.process_event(event)
