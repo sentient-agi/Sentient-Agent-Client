@@ -9,9 +9,11 @@ from sentient_agent_framework.interface.events import (
 class SentientAgentClientCLI:
     def __init__(
         self,
-        client: SentientAgentClient
+        client: SentientAgentClient,
+        url: str
     ):
         self.client = client
+        self.url = url
 
     def print_title(
         self
@@ -41,12 +43,6 @@ class SentientAgentClientCLI:
         print("To exit just type 'exit' and press enter.")
         print()
 
-        # Get agent URL
-        url = input("Enter agent URL: ")
-        if url == "exit":
-            return
-        print()
-
         # Print horizontal line
         self.print_horizontal_line()
 
@@ -59,7 +55,7 @@ class SentientAgentClientCLI:
 
             stream_id = None
 
-            async for event in self.client.query_agent(prompt, url):
+            async for event in self.client.query_agent(prompt, self.url):
                 # Handle done event
                 if isinstance(event, DoneEvent):
                     print()
