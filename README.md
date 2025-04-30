@@ -52,9 +52,9 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-#### 4. Run the client
+#### 4. Run the client with your agent's URL
 ```bash
-python3 -m src.sentient_agent_client
+python3 -m src.sentient_agent_client --url http://0.0.0.0:8000/assist
 ```
 
 Follow the instructions and query away!
